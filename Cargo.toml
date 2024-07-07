@@ -1,0 +1,12 @@
+[package]
+name = "nix_io_demo"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = "1.0.86"
+nix = { version = "0.29.0", features = ["socket", "uio", "net"] }
+nix_prop = { path = "../nix", package = "nix", features = ["socket", "uio", "net"] }
+
+[dev-dependencies]
+rand = "0.8.5"
